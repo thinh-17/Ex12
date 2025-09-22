@@ -1,0 +1,112 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    color: #333;
+    padding: 30px;
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+/* Description */
+p {
+    margin: 12px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Form container */
+form {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+/* Textarea cho SQL */
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    font-family: "Courier New", monospace;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    transition: border 0.3s;
+}
+
+textarea:focus {
+    border: 1px solid #3498db;
+    outline: none;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+}
+
+/* Button */
+input[type="submit"] {
+    margin-top: 12px;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(45deg, #2980b9, #1c5980);
+    transform: translateY(-2px);
+}
+
+/* SQL Result */
+p b {
+    color: #34495e;
+}
+
+/* Table SQL Result (nếu trả về bảng HTML từ SQLUtil) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+th {
+    background: #3498db;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #f1f7fd;
+}
