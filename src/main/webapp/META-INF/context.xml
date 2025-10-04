@@ -3,14 +3,16 @@
     <Resource name="jdbc/Project"
               auth="Container"
               type="javax.sql.DataSource"
-              maxTotal="20"
-              maxIdle="10"
-              maxWaitMillis="10000"
-              username="${DB_USER}"
-              password="${DB_PASSWORD}"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
               driverClassName="org.postgresql.Driver"
-              url="${DB_URL}"/>
+              url="${env.DB_URL}"
+              username="${env.DB_USER}"
+              password="${env.DB_PASSWORD}"
+              maxActive="20"
+              maxIdle="10"
+              maxWait="10000"/>
 </Context>
+
 
 
 
