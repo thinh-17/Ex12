@@ -11,7 +11,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:if test="${sqlStatement == null}">
-    <c:set var="sqlStatement" value="select * from Customer" />
+    <c:set var="sqlStatement" value="select * from Employee" />
 </c:if>
 
 <h1>The SQL Gateway</h1>
