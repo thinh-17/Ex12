@@ -5,13 +5,14 @@
               type="javax.sql.DataSource"
               factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
               driverClassName="org.postgresql.Driver"
-              url="${env.DB_URL}"
-              username="${env.DB_USER}"
-              password="${env.DB_PASSWORD}"
+              url="jdbc:postgresql://dpg-d3gflsh5pdvs73efefhg-a.singapore-postgres.render.com:5432/assignmentdb_uu9l?sslmode=require"
+              username="thinh"
+              password="88VdWpGf25KGUrX3Qr4jjSLTIfWwIQXn"
               maxActive="20"
               maxIdle="10"
               maxWait="10000"/>
 </Context>
+
 
 
 
