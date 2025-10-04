@@ -3,12 +3,14 @@
     <Resource name="jdbc/Project"
               auth="Container"
               type="javax.sql.DataSource"
-              driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
-              url="jdbc:sqlserver://localhost:1433;databaseName=Project"
-              username="thinh"
-              password="1234"
-              maxTotal="100"
-              maxIdle="30"
+              maxTotal="20"
+              maxIdle="10"
               maxWaitMillis="10000"
-    />
+              username="${DB_USER}"
+              password="${DB_PASSWORD}"
+              driverClassName="org.postgresql.Driver"
+              url="${DB_URL}"/>
 </Context>
+
+
+
